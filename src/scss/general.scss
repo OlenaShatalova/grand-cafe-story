@@ -1,0 +1,42 @@
+body {
+  overflow-x: hidden;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: $_main_color;
+  background-color: $_main_bg_color;
+  font-size: 14px;
+  font-weight: 400;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.container {
+  max-width: 320px;
+  padding: 22px 15px;
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding: 60px 119px;
+  }
+}
+
+.section {
+  padding: 20px 0;
+
+  @include media(desktop) {
+    padding: 50px 0;
+  }
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 30px;
+  }
+}
