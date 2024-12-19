@@ -3,6 +3,21 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   color: $_main_color;
+  font-size: 14px;
+  font-weight: 400;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.background {
+  max-width: 320px;
+  height: 3545px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin: 0 auto;
+
   background: linear-gradient(
     37deg,
     $_main_bg_color 14.45%,
@@ -10,34 +25,31 @@ body {
     $_main_bg_color 52.82%,
     $_accent_bg_color 100%
   );
-  font-size: 14px;
-  font-weight: 400;
-  height: 3545px;
-  padding: 22px 0;
-
-  @include media(desktop) {
-    font-size: 20px;
-    height: 3805px;
-    padding: 60px 0;
-  }
-}
-
-.container {
-  max-width: 320px;
-  padding-inline: 15px;
-  margin: 0 auto;
 
   @include media(desktop) {
     max-width: 1200px;
-    padding-inline: 119px;
+    height: 3805px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 .section {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @include media(desktop) {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.container {
+  max-width: 100%;
+  padding-inline: 20px;
+
+  @include media(desktop) {
+    padding-inline: 119px;
   }
 }
 
@@ -50,4 +62,75 @@ body {
   @include media(desktop) {
     font-size: 30px;
   }
+}
+
+.privacy-terms.background {
+  padding-top: 0;
+  padding-bottom: 24px;
+  position: relative;
+
+  @include media(desktop) {
+    padding-bottom: 40px;
+  }
+}
+
+.privacy-terms-header {
+  @include media(to-desktop) {
+    position: fixed;
+    top: 0;
+    width: 320px;
+    backdrop-filter: blur(100px);
+    // background-color: $_accent_bg_color;
+    z-index: 10;
+    padding-top: 24px;
+    padding-inline: 20px;
+  }
+
+  @include media(desktop) {
+    position: absolute;
+    top: 109px;
+    left: 111px;
+    // z-index: 10;
+  }
+}
+
+.privacy-terms .section {
+  padding-top: 12px;
+  padding-top: 68px;
+
+  @include media(desktop) {
+    padding-top: 105px;
+  }
+}
+
+.privacy-terms-container {
+  padding-inline: 20px;
+
+  @include media(desktop) {
+    padding-inline: 111px;
+  }
+}
+
+.privacy-terms .back-link {
+  display: flex;
+  align-items: center;
+  line-height: 2;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  font-size: 14px;
+}
+
+.privacy-terms .back-link:active {
+  background: linear-gradient(180deg, #000 35.98%, #fff 74.26%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.privacy-terms .back-link span:hover {
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.privacy-terms .back-btn {
+  margin-right: 11px;
 }
