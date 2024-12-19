@@ -1,0 +1,23 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+
+<symbol id="icon-hamburger-menu" viewBox="0 0 31 32">
+<path d="M4.821 6h21.214v2h-21.214v-2zM4.821 15h21.214v2h-21.214v-2zM4.821 24h21.214v2h-21.214v-2z"></path>
+</symbol>
+
+<symbol id="icon-arrow-circled" viewBox="0 0 32 32">
+<path d="M5.12 16c0 6.016 4.864 10.88 10.88 10.88s10.88-4.864 10.88-10.88-4.864-10.88-10.88-10.88c-6.016 0-10.88 4.864-10.88 10.88zM25.6 16c0 5.312-4.288 9.6-9.6 9.6s-9.6-4.288-9.6-9.6c0-5.312 4.288-9.6 9.6-9.6s9.6 4.288 9.6 9.6z"></path>
+<path d="M14.912 10.688l5.312 5.312-5.312 5.312 0.896 0.896 6.208-6.208-6.208-6.208-0.896 0.896z"></path>
+<path d="M21.12 16.64v-1.28h-10.88v1.28h10.88z"></path>
+</symbol>
+
+<symbol id="icon-close_btn" viewBox="0 0 31 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M15.5 16l9.042 9.333M15.5 16l-9.042-9.333M15.5 16l-9.042 9.333M15.5 16l9.042-9.333"></path>
+</symbol>
+
+<symbol id="icon-arrow-filled" viewBox="0 0 16 32">
+<path d="M2.457 15.052l7.543-7.543 1.885 1.885-6.6 6.6 6.6 6.6-1.885 1.885-7.543-7.543c-0.25-0.25-0.39-0.589-0.39-0.943s0.14-0.693 0.39-0.943z"></path>
+</symbol>
+
+</defs>
+</svg>
