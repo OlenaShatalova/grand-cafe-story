@@ -13,7 +13,6 @@ body {
 
 .background {
   max-width: 320px;
-  height: 3545px;
   padding-top: 22px;
   padding-bottom: 22px;
   margin: 0 auto;
@@ -28,7 +27,6 @@ body {
 
   @include media(desktop) {
     max-width: 1200px;
-    height: 3805px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -64,7 +62,14 @@ body {
   }
 }
 
-.privacy-terms.background {
+.privacy-terms {
+  background: linear-gradient(
+    223deg,
+    $_accent_bg_color 0%,
+    $_main_bg_color 41.47%,
+    $_accent_bg_color 75%,
+    $_main_bg_color 100%
+  );
   padding-top: 0;
   padding-bottom: 24px;
   position: relative;
@@ -94,7 +99,7 @@ body {
   }
 }
 
-.privacy-terms .section {
+.privacy-terms-section.section {
   padding-top: 12px;
   padding-top: 68px;
 
@@ -133,4 +138,24 @@ body {
 
 .privacy-terms .back-btn {
   margin-right: 11px;
+}
+
+.privacy-terms .title {
+  margin-bottom: 20px;
+}
+
+.privacy-terms-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+
+  @include media(desktop) {
+    gap: 54px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }

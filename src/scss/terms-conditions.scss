@@ -1,0 +1,10 @@
+.terms-links-list {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  list-style-type: disc;
+  padding-left: 15px;
+}
+
+.terms-links-list li::marker {
+  font-size: 0.6em;
+}
