@@ -18,17 +18,24 @@ body {
   margin: 0 auto;
 
   background: linear-gradient(
-    37deg,
-    $_main_bg_color 14.45%,
-    $_accent_bg_color 24.35%,
-    $_main_bg_color 52.82%,
-    $_accent_bg_color 100%
+    215deg,
+    $_accent_bg_color 0%,
+    rgba(167, 195, 255, 0.8) 13.4%,
+    $_main_bg_color 82.41%
   );
 
   @include media(desktop) {
     max-width: 1200px;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    background: linear-gradient(
+      37deg,
+      $_main_bg_color 14.45%,
+      $_accent_bg_color 24.35%,
+      $_main_bg_color 52.82%,
+      $_accent_bg_color 100%
+    );
   }
 }
 
@@ -56,9 +63,11 @@ body {
   font-weight: 500;
   font-size: 20px;
   text-align: center;
+  margin-bottom: 20px;
 
   @include media(desktop) {
     font-size: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -138,10 +147,6 @@ body {
 
 .privacy-terms .back-btn {
   margin-right: 11px;
-}
-
-.privacy-terms .title {
-  margin-bottom: 20px;
 }
 
 .privacy-terms-text-container {
