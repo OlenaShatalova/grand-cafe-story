@@ -8,7 +8,7 @@
   @include media(desktop) {
     padding-inline: 119px;
     display: flex;
-    gap: 21px;
+    justify-content: space-between;
   }
 }
 
@@ -24,11 +24,9 @@
   font-weight: 800;
   font-size: 30px;
   line-height: 1.33333;
-  margin-bottom: 14px;
 
   @include media(desktop) {
     font-size: 40px;
-    margin-bottom: 20px;
   }
 }
 
