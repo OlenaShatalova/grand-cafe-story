@@ -11,7 +11,7 @@
 
 .gallery-swiper {
   height: 100%;
-  
+
   @include media(desktop) {
     padding-inline: 56px;
   }
@@ -51,6 +51,11 @@
   }
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
 .gallery-button-prev,
 .gallery-button-next {
   border: none;
@@ -58,7 +63,7 @@
   padding: 0;
   position: absolute;
   z-index: 100;
-  top: 50%;
+  top: 59%;
   transform: translateY(-50%);
 }
 
