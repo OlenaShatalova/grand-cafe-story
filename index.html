@@ -13,7 +13,8 @@
     <title>GrandCafe Story</title>
     
     <script type="module" crossorigin src="/grand-cafe-story/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/grand-cafe-story/assets/styles-0617f48b.css">
+    <link rel="modulepreload" crossorigin href="/grand-cafe-story/assets/vendor-eb29ed17.js">
+    <link rel="stylesheet" href="/grand-cafe-story/assets/styles-b289b6fa.css">
   </head>
   <body>
     <div class="background">
@@ -45,17 +46,96 @@
         media="(max-width: 1200px)"
       />
       <img
-        class="about-img"
+        class="home-img"
         src="/grand-cafe-story/assets/home@2x-ebbae1b5.png"
         width="370"
         height="311"
         alt="game's picture"
+        draggable="false"
       />
     </picture>
   </div>
 </section>
 
-        <section>Gallery</section>
+        <section class="gallery-section section">
+  <div class="gallery-container">
+    <h2 class="title">Gallery</h2>
+
+    <div class="swiper gallery-swiper">
+      <ul class="swiper-wrapper gallery-list">
+        <li class="swiper-slide gallery-list-item">
+          <picture class="gallery-picture">
+            <source
+              srcset="/grand-cafe-story/assets/gallery-1-42543c96.jpg 1x, /grand-cafe-story/assets/gallery-1-@2x-39e2978b.jpg 2x"
+              media="(max-width: 1200px)"
+            />
+            <source
+              srcset="/grand-cafe-story/assets/gallery-1-79f575b6.jpg 1x, /grand-cafe-story/assets/gallery-1-@2x-1a222205.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="/grand-cafe-story/assets/gallery-1-42543c96.jpg"
+              alt="game's picture"
+              draggable="false"
+            />
+          </picture>
+        </li>
+
+        <li class="swiper-slide gallery-list-item">
+          <picture class="gallery-picture">
+            <source
+              srcset="/grand-cafe-story/assets/gallery-1-42543c96.jpg 1x, /grand-cafe-story/assets/gallery-1-@2x-39e2978b.jpg 2x"
+              media="(max-width: 1200px)"
+            />
+            <source
+              srcset="/grand-cafe-story/assets/gallery-1-79f575b6.jpg 1x, /grand-cafe-story/assets/gallery-1-@2x-1a222205.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="/grand-cafe-story/assets/gallery-1-42543c96.jpg"
+              alt="game's picture"
+              draggable="false"
+            />
+          </picture>
+        </li>
+
+        <li class="swiper-slide gallery-list-item">
+          <picture class="gallery-picture">
+            <source
+              srcset="/grand-cafe-story/assets/gallery-1-42543c96.jpg 1x, /grand-cafe-story/assets/gallery-1-@2x-39e2978b.jpg 2x"
+              media="(max-width: 1200px)"
+            />
+            <source
+              srcset="/grand-cafe-story/assets/gallery-1-79f575b6.jpg 1x, /grand-cafe-story/assets/gallery-1-@2x-1a222205.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="/grand-cafe-story/assets/gallery-1-42543c96.jpg"
+              alt="game's picture"
+              draggable="false"
+            />
+          </picture>
+        </li>
+
+      </ul>
+
+      <button
+        class="gallery-button-prev"
+        type="button"
+        aria-label="Preview image"
+      >
+        <svg width="20" height="40">
+          <use href="/grand-cafe-story/assets/sprite-e02ba6a5.svg#icon-arrow-filled"></use>
+        </svg>
+      </button>
+      <button class="gallery-button-next" type="button" aria-label="Next image">
+        <svg width="20" height="40">
+          <use href="/grand-cafe-story/assets/sprite-e02ba6a5.svg#icon-arrow-filled"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
 
         <section>About-us</section>
 
