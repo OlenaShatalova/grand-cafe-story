@@ -1,0 +1,36 @@
+.about-us-cover {
+  padding: 8px;
+  background-color: #fffa9c;
+  border-radius: 12px;
+  text-align: center;
+  margin: 40px auto;
+  width: 290px;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  @include media(desktop) {
+    padding: 24px 88px 49px;
+    width: 962px;
+    margin: 100px auto;
+  }
+}
+.about-us-title {
+  margin-bottom: 30px;
+  color: #141414;
+  font-weight: 500;
+  font-size: 20px;
+  @include media(desktop) {
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+}
+.about-us-text {
+  line-height: 2;
+  color: #141414;
+  font-size: 14px;
+  max-width: 800px;
+  text-align: center;
+  @include media(desktop) {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+}

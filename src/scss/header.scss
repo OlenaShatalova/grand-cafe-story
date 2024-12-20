@@ -1,30 +1,59 @@
-// .header {
-//   padding: 20px 0;
-// }
+html {
+  scroll-behavior: smooth;
+}
+header {
+  top: 60px;
+  position: fixed;
+  z-index: 1000;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+}
 
-// .nav-list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 40px;
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
-//   @include media(tablet) {
-//     justify-content: flex-start;
-//   }
+.logo-title {
+  font-weight: 400px;
+  font-size: 20px;
+}
 
-//   @include media(desktop) {
-//     justify-content: flex-end;
-//   }
-// }
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
 
-// .nav-link {
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-//   @include font(30, 40);
-//   color: $_header_color;
-// }
+  @include media(tablet) {
+    justify-content: flex-start;
+  }
 
-// .nav-link:hover,
-// .nav-link:focus {
-//   color: $_header_accent_color;
-// }
+  @include media(desktop) {
+    justify-content: flex-end;
+  }
+}
+
+.nav-list li a {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  @include font(30, 40);
+}
+
+.nav-list li a:hover {
+}
+
+.burger-menu {
+  background-color: transparent;
+  border: none;
+}
+.buger-icon {
+  stroke: #000000;
+}
