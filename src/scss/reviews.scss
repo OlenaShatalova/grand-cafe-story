@@ -1,14 +1,19 @@
+.reviews {
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+  padding-bottom: 50px;
+  z-index: 1;
+  overflow: visible;
+}
 .reviews-container {
   width: 666px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 80px;
+  gap: 60px;
   margin-left: auto;
-}
-.reviews {
-  text-align: center;
-  padding-top: 100px;
+  z-index: 2;
 }
 
 .reviews h2 {
@@ -56,4 +61,18 @@
   text-align: center;
   margin: 0;
   padding: 0 1rem;
+}
+
+.character-image {
+  position: absolute; /* Абсолютне позиціонування відносно секції .reviews */
+  bottom: -30px; /* Зміщення вниз, щоб вийти за рамки секції */
+  left: 0; /* Зміщення ліворуч, щоб вийти за межі секції */
+  z-index: 0; /* Відправляємо зображення назад (опціонально) */
+  pointer-events: none; /* Щоб зображення не впливало на кліки */
+}
+
+@include media(to-desktop) {
+  .hidden {
+    display: none;
+  }
 }
