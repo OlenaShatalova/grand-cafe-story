@@ -1,1 +1,72 @@
-<section>Benefits</section>
+<section class="benefits">
+  <h2>Benefits</h2>
+  <ul class="benefits-grid">
+    <li class="benefit-item" onclick="showInfo('info1')">
+      <img
+        srcset="
+          ./img/benefits/benefits_1_desk.jpg,
+          ./img/benefits/benefits_1_desk.jpg@2x 2x
+        "
+        alt="Engaging Puzzles"
+        width="296"
+        height="232"
+      />
+      <div class="benefit-text">Engaging Puzzles</div>
+    </li>
+    <li class="benefit-item" onclick="showInfo('info2')">
+      <img
+        srcset="
+          ./img/benefits/benefits_2_desk.jpg,
+          ./img/benefits/benefits_2_desk.jpg@2x 2x
+        "
+        alt="Cafe Renovation"
+      />
+      <div class="benefit-text">Cafe Renovation</div>
+    </li>
+    <li class="benefit-item" onclick="showInfo('info3')">
+      <img
+        srcset="
+          ./img/benefits/benefits_3_desk.jpg,
+          ./img/benefits/benefits_3_desk.jpg@2x 2x
+        "
+        alt="Charming Storyline"
+      />
+      <div class="benefit-text">Charming Storyline</div>
+    </li>
+    <li class="benefit-item" onclick="showInfo('info4')">
+      <img
+        srcset="
+          ./img/benefits/benefits_4_desk.jpg,
+          ./img/benefits/benefits_4_desk.jpg@2x 2x
+        "
+        alt="Customizable Designs"
+      />
+      <div class="benefit-text">Customizable Designs</div>
+    </li>
+    <li class="benefit-item">
+      <img
+        srcset="
+          ./img/benefits/benefits_logo.png,
+          ./img/benefits/benefits_logo@2x.png 2x
+        "
+        alt="Frequent Updates"
+      />
+    </li>
+    <li class="benefit-item" onclick="showInfo('info5')">
+      <img
+        srcset="
+          ./img/benefits/benefits_5_desk.jpg,
+          ./img/benefits/benefits_5_desk@2x.jpg 2x
+        "
+        alt="Frequent Updates"
+      />
+      <div class="benefit-text">Frequent Updates</div>
+    </li>
+  </ul>
+  <div id="info-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="info-text">Additional information will appear here.</p>
+    </div>
+  </div>
+</section>
