@@ -1,0 +1,62 @@
+.home-container {
+  padding-inline: 20.5px;
+
+  @include media(desktop) {
+    padding-inline: 119px;
+    display: flex;
+    gap: 21px;
+  }
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.home-title {
+  font-family: 'Baloo Tammudu', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.33333;
+  margin-bottom: 14px;
+
+  @include media(desktop) {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+}
+
+.home-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.google-link {
+  display: block;
+  width: 173px;
+  height: 49px;
+  background-color: $_main_color;
+  color: white;
+}
+
+.google-link:hover {
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.7);
+}
+
+.home-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    border: 1px solid #fffa9c;
+    border-radius: 12px;
+  }
+}
