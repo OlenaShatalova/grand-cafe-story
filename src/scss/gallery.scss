@@ -1,0 +1,83 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+
+.gallery-container {
+  padding-inline: 15px;
+
+  @include media(desktop) {
+    padding-inline: 63px;
+  }
+}
+
+.gallery-swiper {
+  height: 100%;
+  
+  @include media(desktop) {
+    padding-inline: 56px;
+  }
+}
+
+// .gallery-list {
+//   @include media(desktop) {
+//     padding-inline: 56px;
+//   }
+// }
+
+.gallery-list-item {
+  max-width: 226px;
+
+  @include media(to-desktop) {
+    padding-inline: 32px;
+  }
+
+  @include media(desktop) {
+    // padding-left: 56px;
+    max-width: 440px;
+  }
+}
+
+// .gallery-picture {
+//   display: block;
+// }
+
+.gallery-picture img {
+  width: 226px;
+  height: 281px;
+
+  @include media(desktop) {
+    width: 440px;
+    height: 439px;
+    border-radius: 12px;
+  }
+}
+
+.gallery-button-prev,
+.gallery-button-next {
+  border: none;
+  background: transparent;
+  padding: 0;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gallery-button-prev {
+  left: 0;
+}
+
+.gallery-button-next {
+  right: 0;
+}
+
+.gallery-button-next svg {
+  transform: rotate(180deg);
+}
+
+@include media(desktop) {
+  .gallery-button-prev svg,
+  .gallery-button-next svg {
+    width: 32px;
+    height: 64px;
+  }
+}
