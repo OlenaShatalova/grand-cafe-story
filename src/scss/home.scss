@@ -1,3 +1,7 @@
+.home-section {
+  padding-top: 108px;
+}
+
 .home-container {
   padding-inline: 20.5px;
 
@@ -16,14 +20,14 @@
 }
 
 .home-title {
-  font-family: 'Baloo Tammudu', sans-serif;
-  font-weight: 400;
+  font-family: 'Baloo Tammudu 2', sans-serif;
+  font-weight: 800;
   font-size: 30px;
   line-height: 1.33333;
   margin-bottom: 14px;
 
   @include media(desktop) {
-    font-size: 38px;
+    font-size: 40px;
     margin-bottom: 20px;
   }
 }
@@ -35,7 +39,7 @@
 
   @include media(desktop) {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 40.5px;
   }
 }
 
