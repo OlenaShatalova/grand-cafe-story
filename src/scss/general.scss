@@ -19,7 +19,7 @@ body {
 
   background: linear-gradient(
     215deg,
-    $_accent_bg_color 0%,
+    $_accent_bg_color 5%,
     rgba(167, 195, 255, 0.8) 13.4%,
     $_main_bg_color 82.41%
   );
@@ -30,15 +30,15 @@ body {
 
     background: url(../img/home-tnt.svg) no-repeat top 270px left 119px / 320px
         321px,
-      url(../img/home-candy.svg) no-repeat top 31px right 359px / 309px
-        315px,
+      url(../img/home-candy.svg) no-repeat top 31px right 359px / 309px 315px,
       url(../img/home-iceCream.svg) no-repeat top 406px right -25px / 307px 324px,
+      url(../img/reviews-woman.svg) no-repeat top 2530px left -10px / 400px 679.66px,
       linear-gradient(
-        37deg,
-        $_main_bg_color 14.45%,
+        15deg,
+        $_main_bg_color 16.45%,
         $_accent_bg_color 24.35%,
         $_main_bg_color 52.82%,
-        $_accent_bg_color 100%
+        $_accent_bg_color 89%
       );
   }
 }
