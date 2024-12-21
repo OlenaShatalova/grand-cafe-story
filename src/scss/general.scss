@@ -72,6 +72,10 @@ body {
   }
 }
 
+.hover:hover {
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.7);
+}
+
 .privacy-terms {
   background: linear-gradient(
     223deg,
