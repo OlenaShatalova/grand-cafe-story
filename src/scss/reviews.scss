@@ -5,43 +5,20 @@
 
 .reviews-background {
   @include media(to-desktop) {
-    background: url(../img/reviews/\ speech_bubble_mob.png) no-repeat top 0px
-        left 20px / 234px 87px,
-      url(../img/reviews/\ speech_bubble_mob.png) no-repeat top 110px left 20px /
+    background: url(../img/reviews/speech_bubble_mob.png) no-repeat top 0px left
+        20px / 234px 87px,
+      url(../img/reviews/speech_bubble_mob.png) no-repeat top 110px left 20px /
         234px 87px,
-      url(../img/reviews/\ speech_bubble_mob.png) no-repeat top 220px left 20px /
+      url(../img/reviews/speech_bubble_mob.png) no-repeat top 220px left 20px /
         234px 87px,
-      url(../img/reviews/\ speech_bubble_mob.png) no-repeat top 330px left 20px /
+      url(../img/reviews/speech_bubble_mob.png) no-repeat top 330px left 20px /
         234px 87px,
-      url(../img/reviews/\ speech_bubble_mob.png) no-repeat top 440px left 20px /
+      url(../img/reviews/speech_bubble_mob.png) no-repeat top 440px left 20px /
         234px 87px;
     padding-top: 9px;
     padding-bottom: 9px;
   }
-  // @include media(desktop) {
-  //   background: url(../img/reviews/\ speech_bubble_right_desk.png) no-repeat top
-  //       50px left 700px / 381px 84px,
-  //     url(../img/reviews/\ speech_bubble_left_desk.png) no-repeat top 185px left
-  //       400px / 381px 84px,
-  //     url(../img/reviews/\ speech_bubble_right_desk.png) no-repeat top 325px
-  //       left 700px / 381px 84px,
-  //     url(../img/reviews/\ speech_bubble_left_desk.png) no-repeat top 460px left
-  //       400px / 381px 84px,
-  //     url(../img/reviews/\ speech_bubble_right_desk.png) no-repeat top 604px
-  //       left 700px / 381px 84px;
-  //   padding-top: 0;
-  //   padding-bottom: 0;
-  // }
 }
-
-// .reviews-title {
-//   font-size: 30px;
-//   // margin-bottom: 20px;
-//   line-height: 1.2;
-//   font-weight: 500;
-//   text-align: center;
-// }
-
 .review-list {
   display: flex;
   flex-direction: column;
@@ -69,17 +46,6 @@
   }
 }
 
-// .review-item {
-//
-//   flex-direction: row;
-// }
-
-// .review-item:nth-child(odd) {
-//   @include media(desktop) {
-//     flex-direction: row-reverse;
-//   }
-// }
-
 .review-text {
   width: 174px;
   font-size: 12px;
@@ -105,7 +71,7 @@
 
 .review-desk-cont {
   @include media(desktop) {
-    background: url(../img/reviews/\ speech_bubble_right_desk.png) no-repeat top
+    background: url(../img/reviews/speech_bubble_right_desk.png) no-repeat top
       left / 381px 84px;
     width: 381px;
     height: 84px;
@@ -114,7 +80,7 @@
 }
 .review-desk-even {
   @include media(desktop) {
-    background: url(../img/reviews/\ speech_bubble_left_desk.png) no-repeat top
+    background: url(../img/reviews/speech_bubble_left_desk.png) no-repeat top
       left / 381px 84px;
     width: 381px;
     height: 84px;
