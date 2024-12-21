@@ -10,19 +10,10 @@
   @include media(desktop) {
     padding: 24px 88px 49px;
     width: 962px;
-    margin: 100px auto;
+    margin: 50px auto;
   }
 }
-.about-us-title {
-  margin-bottom: 30px;
-  color: #141414;
-  font-weight: 500;
-  font-size: 20px;
-  @include media(desktop) {
-    margin-bottom: 50px;
-    font-size: 30px;
-  }
-}
+
 .about-us-text {
   line-height: 2;
   color: #141414;

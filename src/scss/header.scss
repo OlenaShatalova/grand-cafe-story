@@ -2,14 +2,25 @@ html {
   scroll-behavior: smooth;
 }
 header {
-  top: 60px;
+  top: 0;
   position: fixed;
   z-index: 1000;
+  height: 60px;
+  width: 320px;
+  @include media(desktop) {
+    width: 1200px;
+  }
 }
+
 .header-container {
   display: flex;
   align-items: center;
-  // justify-content: space-between;
+  gap: 26px;
+  justify-content: space-between;
+  padding-top: 22px;
+  @include media(desktop) {
+    padding-top: 60px;
+  }
 }
 
 .logo-container {
@@ -19,8 +30,13 @@ header {
 }
 
 .logo-title {
-  font-weight: 400px;
+  font-weight: 800;
   font-size: 20px;
+  font-family: 'Baloo Tammudu 2', sans-serif;
+  font-size: 16px;
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }
 
 .nav-list {
@@ -39,12 +55,16 @@ header {
     justify-content: flex-end;
   }
 }
-
+.nav-menu {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+  }
+}
 .nav-list li a {
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.02em;
-  @include font(30, 40);
 }
 
 .nav-list li a:hover {
@@ -53,6 +73,9 @@ header {
 .burger-menu {
   background-color: transparent;
   border: none;
+  @include media(desktop) {
+    display: none;
+  }
 }
 .buger-icon {
   stroke: #000000;

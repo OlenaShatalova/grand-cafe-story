@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.benefits h2 {
-  font-size: 30px;
-  margin-bottom: 50px;
-}
-
 .benefits-grid {
   display: flex;
   justify-content: center;
@@ -67,11 +62,11 @@
 .no-flip .card-inner {
   transform: none !important;
 }
-// @include media(mobile) {
-//   .no-flip {
-//     display: none;
-//   }
-// }
+@include media(to-desktop) {
+  .no-flip {
+    display: none;
+  }
+}
 
 /* Front and back faces of the card */
 .card-front,
