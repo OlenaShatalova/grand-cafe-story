@@ -14,7 +14,6 @@ body {
 
 .background {
   max-width: 320px;
-  // padding-top: 22px;
   padding-bottom: 22px;
   margin: 0 auto;
 
@@ -27,16 +26,20 @@ body {
 
   @include media(desktop) {
     max-width: 1200px;
-    padding-top: 60px;
     padding-bottom: 60px;
 
-    background: linear-gradient(
-      37deg,
-      $_main_bg_color 14.45%,
-      $_accent_bg_color 24.35%,
-      $_main_bg_color 52.82%,
-      $_accent_bg_color 100%
-    );
+    background: url(../img/home-tnt.svg) no-repeat top 270px left 119px / 320px
+        321px,
+      url(../img/home-candy.svg) no-repeat top 31px right 359px / 309px
+        315px,
+      url(../img/home-iceCream.svg) no-repeat top 406px right -25px / 307px 324px,
+      linear-gradient(
+        37deg,
+        $_main_bg_color 14.45%,
+        $_accent_bg_color 24.35%,
+        $_main_bg_color 52.82%,
+        $_accent_bg_color 100%
+      );
   }
 }
 
@@ -90,6 +93,13 @@ body {
 
   @include media(desktop) {
     padding-bottom: 40px;
+    background: linear-gradient(
+      223deg,
+      $_accent_bg_color 0%,
+      $_main_bg_color 41.47%,
+      $_accent_bg_color 75%,
+      $_main_bg_color 100%
+    );
   }
 }
 
