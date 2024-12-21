@@ -40,7 +40,6 @@
 @include media(desktop) {
   .gallery-link {
     pointer-events: none;
-    opacity: 0.5; /* або приховати: display: none; */
   }
 }
 
@@ -90,29 +89,4 @@
     width: 32px;
     height: 64px;
   }
-}
-
-.gallery-link .sl-overlay {
-  backdrop-filter: none !important; /* Вимкнення блюру фону */
-}
-
-/* Використовуємо більш специфічний селектор для lightbox */
-.custom-lightbox .simple-lightbox.simple-lightbox-open .sl-image {
-  position: absolute !important;
-  z-index: 9999 !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important; /* Встановлюємо ширину 100% від контейнера */
-  height: 100% !important; /* Встановлюємо висоту 100% від контейнера */
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Стилі для зображення в lightbox */
-.custom-lightbox .simple-lightbox.simple-lightbox-open .sl-image {
-  width: 100% !important;
-  height: auto !important; /* Висота автоматично залежить від ширини */
-  max-height: 100% !important;
-  object-fit: contain !important; /* Зберігає пропорції зображення */
-  /* Максимальна висота зображення */
 }
