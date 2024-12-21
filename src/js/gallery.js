@@ -8,8 +8,8 @@ const gallerySwiper = new Swiper('.swiper', {
   modules: [Navigation, Keyboard],
 
   navigation: {
-    nextEl: '.gallery-button-next',
-    prevEl: '.gallery-button-prev',
+    nextEl: '.gallery-button-next.swiper-button-next',
+    prevEl: '.gallery-button-prev.swiper-button-prev',
   },
 
   direction: 'horizontal',

@@ -9,25 +9,26 @@
 
 .reviews {
   text-align: center;
-  padding-top: 100px;
+  padding: 2rem 1rem;
 }
 
 .reviews h2 {
-  font-size: 30px;
-  margin-bottom: 50px;
-  line-height: 1.2;
-  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .review {
-  display: flex;
-  gap: 16px;
-  align-items: end;
+  margin-bottom: 2.5rem;
 }
 
 .reviewer-name {
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.review-text {
+  font-size: 1px;
 }
 
 .speech-bubble {
@@ -37,6 +38,7 @@
   justify-content: center;
   width: 381px;
   height: 84px;
+  margin: 0 auto;
 }
 
 .speech-bubble img {
@@ -45,16 +47,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 1; /* Ensures the image is the background */
 }
 
 .speech-bubble p {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Places text above the image */
   font-size: 14px;
   color: #333;
   line-height: 1.5;
   text-align: center;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 1rem; /* Adds some padding to ensure text doesn't touch edges */
 }
