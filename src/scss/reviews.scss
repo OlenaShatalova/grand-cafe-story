@@ -6,23 +6,23 @@
   gap: 80px;
   margin-left: auto;
 }
+
 .reviews {
   text-align: center;
-  padding-top: 100px;
+  padding: 2rem 1rem;
 }
 
 .reviews h2 {
-  font-size: 30px;
+   font-size: 30px;
   margin-bottom: 50px;
   line-height: 1.2;
   font-weight: 500;
 }
 
 .review {
-  display: flex;
+ display: flex;
   gap: 16px;
-  align-items: end;
-}
+  align-items: end;}
 
 .reviewer-name {
   font-size: 18px;
@@ -49,11 +49,11 @@
 
 .speech-bubble p {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Places text above the image */
   font-size: 14px;
   color: #333;
   line-height: 1.5;
   text-align: center;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 1rem; /* Adds some padding to ensure text doesn't touch edges */
 }
