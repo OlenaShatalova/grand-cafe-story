@@ -2,9 +2,6 @@ import SimpleLightbox from 'simplelightbox';
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-
 const gallerySwiper = new Swiper('.swiper', {
   modules: [Navigation, Keyboard],
 
@@ -42,30 +39,39 @@ const lightbox = new SimpleLightbox('.gallery-link', {
   fadeSpeed: 300, // Швидкість анімації закриття
   overlay: false,
   close: false,
+  scaleImageToRatio: false,
 });
 
+/////////////////
+// lightbox.openPosition({
+//   y: 0,
+//   x: 0, // Враховуємо прокрутку сторінки
+// });
+
 lightbox.on('shown.simplelightbox', function () {
+  const lightboxElement = document.querySelector('.simple-lightbox');
+
   const swiperContainer = document.querySelector('.swiper.gallery-swiper');
   const rect = swiperContainer.getBoundingClientRect();
 
-  // Перевіряємо, чи лайтбокс відкритий
-  if (lightbox.isOpen) {
-    // Встановлюємо позицію лайтбоксу по вертикалі з врахуванням прокрутки
-    lightbox.openPosition({
-      y: rect.top, // Враховуємо прокрутку сторінки
-    });
-  }
+  console.log(rect.top);
+  console.log(lightboxElement);
 
-  console.log(rect);
-  console.log(swiperContainer);
+  // Встановлюємо координати вручну
+  // lightboxElement.style.position = 'absolute';
+  lightboxElement.style.top = `${rect.top + window.scrollY}px`;
+  // lightboxElement.style.top = '399px';
+  lightboxElement.style.zIndex = '1000';
+  // lightboxElement.style.left = '244px';
+});
 
+// Закриваємо Lightbox по click на ньому
+lightbox.on('shown.simplelightbox', function () {
   const lightboxElement = document.querySelector('.simple-lightbox');
 
-  // Додаємо обробник кліку на весь лайтбокс
   lightboxElement.addEventListener('click', function (event) {
-    // Перевіряємо, чи клік на саме зображення
     if (event.target.tagName.toLowerCase() === 'img') {
-      lightbox.close(); // Закриваємо Lightbox
+      lightbox.close();
     }
   });
 });

@@ -1,4 +1,4 @@
-@import 'simplelightbox/dist/simple-lightbox.min.css';
+// @import 'simplelightbox/dist/simple-lightbox.min.css';
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 
@@ -17,12 +17,6 @@
     padding-inline: 56px;
   }
 }
-
-// .gallery-list {
-//   @include media(desktop) {
-//     padding-inline: 56px;
-//   }
-// }
 
 .gallery-list-item {
   max-width: 226px;
@@ -89,4 +83,19 @@
     width: 32px;
     height: 64px;
   }
+}
+
+.sl-wrapper {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+.sl-wrapper:focus-visible {
+  outline: none;
+}
+.sl.wrapper > .sl-image {
+  display: block;
+  width: 270px !important;
+  height: 281px;
 }
