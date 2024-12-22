@@ -75,107 +75,14 @@ body {
   }
 }
 
-.hover:hover {
+.hover-box:hover {
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.7);
 }
 
-.privacy-terms {
-  background: linear-gradient(
-    223deg,
-    $_accent_bg_color 0%,
-    $_main_bg_color 41.47%,
-    $_accent_bg_color 75%,
-    $_main_bg_color 100%
-  );
-  padding-top: 0;
-  padding-bottom: 24px;
-  position: relative;
-
-  @include media(desktop) {
-    padding-bottom: 40px;
-    background: linear-gradient(
-      223deg,
-      $_accent_bg_color 0%,
-      $_main_bg_color 41.47%,
-      $_accent_bg_color 75%,
-      $_main_bg_color 100%
-    );
-  }
+.hover-link:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.privacy-terms-header {
-  @include media(to-desktop) {
-    position: fixed;
-    top: 0;
-    width: 320px;
-    backdrop-filter: blur(100px);
-    // background-color: $_accent_bg_color;
-    z-index: 10;
-    padding-top: 24px;
-    padding-inline: 20px;
-  }
-
-  @include media(desktop) {
-    position: absolute;
-    top: 109px;
-    left: 111px;
-    // z-index: 10;
-  }
-}
-
-.privacy-terms-section.section {
-  padding-top: 12px;
-  padding-top: 68px;
-
-  @include media(desktop) {
-    padding-top: 105px;
-  }
-}
-
-.privacy-terms-container {
-  padding-inline: 20px;
-
-  @include media(desktop) {
-    padding-inline: 111px;
-  }
-}
-
-.privacy-terms .back-link {
-  display: flex;
-  align-items: center;
-  line-height: 2;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  font-size: 14px;
-}
-
-.privacy-terms .back-link:active {
-  background: linear-gradient(180deg, #000 35.98%, #fff 74.26%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.privacy-terms .back-link span:hover {
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-}
-
-.privacy-terms .back-btn {
-  margin-right: 11px;
-}
-
-.privacy-terms-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-  padding: 8px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-
-  @include media(desktop) {
-    gap: 54px;
-    font-size: 20px;
-    line-height: 1.4;
-  }
+.terms-links-list a:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
