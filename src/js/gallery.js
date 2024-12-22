@@ -35,67 +35,40 @@ const gallerySwiper = new Swiper('.swiper', {
 
 gallerySwiper.update();
 
-const lightbox = new SimpleLightbox('.gallery-link', {
-  fadeSpeed: 300, // Швидкість анімації закриття
-  overlay: false,
-  close: false,
-  scaleImageToRatio: false,
-});
-
-/////////////////
-// lightbox.openPosition({
-//   y: 0,
-//   x: 0, // Враховуємо прокрутку сторінки
+// const lightbox = new SimpleLightbox('.gallery-link', {
+//   fadeSpeed: 300, // Швидкість анімації закриття
+//   overlay: false,
+//   close: false,
+//   scaleImageToRatio: false,
 // });
 
-lightbox.on('shown.simplelightbox', function () {
-  const lightboxElement = document.querySelector('.simple-lightbox');
 
-  const swiperContainer = document.querySelector('.swiper.gallery-swiper');
-  const rect = swiperContainer.getBoundingClientRect();
-
-  console.log(rect.top);
-  console.log(lightboxElement);
-
-  // Встановлюємо координати вручну
-  // lightboxElement.style.position = 'absolute';
-  lightboxElement.style.top = `${rect.top + window.scrollY}px`;
-  // lightboxElement.style.top = '399px';
-  lightboxElement.style.zIndex = '1000';
-  // lightboxElement.style.left = '244px';
-});
-
-// Закриваємо Lightbox по click на ньому
-lightbox.on('shown.simplelightbox', function () {
-  const lightboxElement = document.querySelector('.simple-lightbox');
-
-  lightboxElement.addEventListener('click', function (event) {
-    if (event.target.tagName.toLowerCase() === 'img') {
-      lightbox.close();
-    }
-  });
-});
 
 // lightbox.on('shown.simplelightbox', function () {
-//   const lightboxElement = document.querySelector('.custom-lightbox');
-//   const swiperContainer = document.querySelector('.swiper.gallery-swiper'); // Контейнер для лайтбоксу
+//   const lightboxElement = document.querySelector('.simple-lightbox');
 
-//   if (lightboxElement && swiperContainer) {
-//     const rect = swiperContainer.getBoundingClientRect();
+//   const swiperContainer = document.querySelector('.swiper.gallery-swiper');
+//   const rect = swiperContainer.getBoundingClientRect();
 
-//     // Позиціонуємо лайтбокс всередині контейнера .swiper.gallery-swiper
-//     lightboxElement.style.position = 'absolute';
-//     lightboxElement.style.top = `${rect.top + window.scrollY}px`; // Враховуємо прокрутку сторінки
-//     lightboxElement.style.left = `${rect.left + window.scrollX}px`;
-//     lightboxElement.style.width = `${rect.width}px`;
-//     lightboxElement.style.height = `${rect.height}px`;
-//   }
+//   console.log(rect.top);
+//   console.log(lightboxElement);
 
-//   // Переконуємось, що зображення теж коректно масштабоване в межах лайтбоксу
-//   const imgElement = lightboxElement.querySelector('img');
-//   if (imgElement) {
-//     imgElement.style.width = '100%'; // Ширина зображення 100% від контейнера
-//     imgElement.style.height = '100%'; // Висота зображення 100% від контейнера
-//     imgElement.style.objectFit = 'contain'; // Масштабування збереження пропорцій
-//   }
+//   // Встановлюємо координати вручну
+//   // lightboxElement.style.position = 'absolute';
+//   lightboxElement.style.top = `${rect.top + window.scrollY}px`;
+//   // lightboxElement.style.top = '399px';
+//   lightboxElement.style.zIndex = '1000';
+//   // lightboxElement.style.left = '244px';
 // });
+
+// Закриваємо Lightbox по click на ньому
+// lightbox.on('shown.simplelightbox', function () {
+//   const lightboxElement = document.querySelector('.simple-lightbox');
+
+//   lightboxElement.addEventListener('click', function (event) {
+//     if (event.target.tagName.toLowerCase() === 'img') {
+//       lightbox.close();
+//     }
+//   });
+// });
+

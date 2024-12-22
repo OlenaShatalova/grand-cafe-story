@@ -1,6 +1,7 @@
 //   <!-- Header and Navigation  -->
 const header = document.querySelector('.js-header');
 const headerLinks = document.querySelectorAll('.nav-menu a');
+const sections = document.querySelectorAll('section');
 
 //   <!-- Mobile Menu  -->
 const mobileMenu = document.querySelector('.js-mob-menu');
@@ -49,3 +50,42 @@ mobileLinks.forEach(link => {
     closeMenu();
   });
 });
+
+// Blured after scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 10) {
+    header.classList.add('blured');
+  } else {
+    header.classList.remove('blured');
+  }
+});
+
+//  Highligth active header link
+const observerOptions = {
+  root: null,
+  rootMargin: `-${header.offsetHeight}px 0px 0px 0px`,
+  threshold: 0.6,
+};
+
+function highlightActiveSection(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const activeId = entry.target.getAttribute('id');
+      headerLinks.forEach(link => {
+        link.classList.toggle(
+          'inactive',
+          link.getAttribute('href').slice(1) === activeId
+        );
+      });
+    }
+  });
+}
+
+const observer = new IntersectionObserver(
+  highlightActiveSection,
+  observerOptions
+);
+
+sections.forEach(section => observer.observe(section));
+
+console.log(sections);

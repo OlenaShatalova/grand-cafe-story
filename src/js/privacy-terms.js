@@ -1,10 +1,10 @@
-const header = document.querySelector('.privacy-terms-header');
-const triggerPoint = header.offsetTop - 24;
+const headerTerms = document.querySelector('.privacy-terms-header');
+const triggerPoint = headerTerms.offsetTop - 24;
 
 window.addEventListener('scroll', () => {
   if (window.scrollY >= triggerPoint) {
-    header.classList.add('sticky');
+    headerTerms.classList.add('sticky');
   } else {
-    header.classList.remove('sticky');
+    headerTerms.classList.remove('sticky');
   }
 });
