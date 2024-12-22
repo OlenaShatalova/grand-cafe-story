@@ -11,6 +11,7 @@ const gallerySwiper = new Swiper('.swiper', {
   },
 
   direction: 'horizontal',
+  loop:true,
   autoHeight: false,
   autoWidth: false,
   watchOverflow: true,

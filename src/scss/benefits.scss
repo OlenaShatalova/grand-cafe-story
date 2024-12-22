@@ -1,25 +1,36 @@
 .benefits {
   text-align: center;
+  @include media(desktop) {
+    padding-inline: 107px;
+  }
 }
 
 .benefits-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 24px;
   margin: 0 auto;
+
+  @include media(desktop) {
+    gap: 49px;
+  }
 }
 
 .benefit-item {
   position: relative;
-  border-radius: 15px;
+  border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
 }
 
 .benefit-item img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 234px;
+
+  @include media(desktop) {
+    width: 296px;
+  }
 }
 
 .benefit-text {
@@ -28,21 +39,31 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.2rem 1rem;
-  width: 173px;
-  height: 56px;
-  border-radius: 10px;
+  width: 172px;
+  height: 64px;
+  border-radius: 12px;
   font-weight: 600;
   font-size: 20px;
-  color: #141414;
-  text-align: center;
+  line-height: 1.4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @include media(desktop) {
+    width: 173px;
+    height: 56px;
+  }
 }
 
 .card {
-  perspective: 1000px;
-  width: 296px;
+  perspective: 10000px;
+  width: 280px;
   height: 232px;
+
+  @include media(desktop) {
+    width: 296px;
+  }
 }
 
 /* Inner card that flips */
@@ -61,11 +82,18 @@
 
 .no-flip .card-inner {
   transform: none !important;
+  cursor: auto;
+
 }
 @include media(to-desktop) {
   .no-flip {
     display: none;
   }
+}
+
+.benefit-item.no-flip img{
+  width: 296px;
+  height: 136.75px;
 }
 
 /* Front and back faces of the card */
@@ -75,11 +103,12 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 10px; /* Optional for rounded corners */
+  border-radius: 12px;
   overflow: hidden;
 }
 
 .card-front {
+  box-shadow: 0 1px 2px 0 rgba(255, 250, 156, 0.4);
   z-index: 2;
 }
 
@@ -90,7 +119,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
-  font-size: 16px;
-  color: #333;
+  padding-inline: 50px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px 0 rgba(255, 250, 156, 0.4);
+  font-weight: 400;
+  line-height: 2;
 }

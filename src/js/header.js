@@ -64,7 +64,7 @@ window.addEventListener('scroll', () => {
 const observerOptions = {
   root: null,
   rootMargin: `-${header.offsetHeight}px 0px 0px 0px`,
-  threshold: 0.6,
+  threshold: 0.7,
 };
 
 function highlightActiveSection(entries) {
