@@ -34,6 +34,16 @@ function scrollToSection(link) {
 burgerBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
 
+document.addEventListener('click', event => {
+  if (
+    !mobileMenu.contains(event.target) &&
+    !burgerBtn.contains(event.target) &&
+    !closeBtn.contains(event.target)
+  ) {
+    closeMenu();
+  }
+});
+
 // Header navigation links
 headerLinks.forEach(link => {
   link.addEventListener('click', e => {
@@ -88,4 +98,4 @@ const observer = new IntersectionObserver(
 
 sections.forEach(section => observer.observe(section));
 
-console.log(sections);
+

@@ -19,7 +19,6 @@ header {
 .header-container {
   display: flex;
   align-items: center;
-  gap: 26px;
   justify-content: space-between;
   padding-top: 22px;
   @include media(desktop) {
@@ -30,14 +29,19 @@ header {
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 26px;
+
+  @include media(desktop) {
+    gap: 6px;
+  }
 }
 
 .logo-title {
   font-weight: 800;
-  font-size: 20px;
   font-family: 'Baloo Tammudu 2', sans-serif;
   font-size: 16px;
+  padding-top: 7px;
+
   @include media(desktop) {
     font-size: 20px;
   }
@@ -71,18 +75,20 @@ header {
 
 .nav-list li a:active {
   background: linear-gradient(360deg, #000 0%, #fff 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.nav-list .inactive{
-  color: #d9d9d9;;
+.nav-list .inactive {
+  color: #d9d9d9;
 }
 
 .burger-menu {
+  padding: 0;
   background-color: transparent;
   border: none;
+
   @include media(desktop) {
     display: none;
   }
