@@ -1,4 +1,3 @@
-import SimpleLightbox from 'simplelightbox';
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 

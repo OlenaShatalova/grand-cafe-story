@@ -25,7 +25,6 @@
 }
 
 .benefit-item img {
-  width: auto;
   height: 234px;
 
   @include media(desktop) {
@@ -57,7 +56,7 @@
 }
 
 .card {
-  perspective: 10000px;
+  perspective: 90000px;
   width: 280px;
   height: 232px;
 
@@ -83,7 +82,6 @@
 .no-flip .card-inner {
   transform: none !important;
   cursor: auto;
-
 }
 @include media(to-desktop) {
   .no-flip {
@@ -91,7 +89,7 @@
   }
 }
 
-.benefit-item.no-flip img{
+.benefit-item.no-flip img {
   width: 296px;
   height: 136.75px;
 }

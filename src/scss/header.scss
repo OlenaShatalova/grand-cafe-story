@@ -44,6 +44,8 @@ header {
 
   @include media(desktop) {
     font-size: 20px;
+    display: block;
+    height: 48px;
   }
 }
 

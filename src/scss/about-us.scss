@@ -1,5 +1,7 @@
-#about-us .container{
-  padding-inline: 15px;
+#about-us .container {
+  @include media(to-desktop) {
+    padding-inline: 15px;
+  }
 }
 
 .about-us-cover {
@@ -8,10 +10,16 @@
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
   @include media(desktop) {
     padding: 24px 88px 49px;
     width: 962px;
-    margin: 50px auto;
+  }
+}
+
+.about-us-title {
+  @include media(to-desktop) {
+    margin-bottom: 30px;
   }
 }
 
@@ -21,6 +29,7 @@
   font-size: 14px;
   max-width: 800px;
   text-align: center;
+  
   @include media(desktop) {
     line-height: 1.5;
     font-size: 20px;
