@@ -73,8 +73,8 @@ window.addEventListener('scroll', () => {
 //  Highligth active header link
 const observerOptions = {
   root: null,
-  rootMargin: `-${header.offsetHeight}px 0px 0px 0px`,
-  threshold: 0.7,
+  rootMargin: `-${header.offsetHeight}px 0px -200px 0px`,
+  threshold: 0.6,
 };
 
 function highlightActiveSection(entries) {
@@ -97,4 +97,3 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach(section => observer.observe(section));
-
