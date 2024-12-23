@@ -74,9 +74,16 @@
   height: 100%;
 }
 
-/* Flip animation */
-.card:hover .card-inner {
+.card.is-flipped .card-inner {
   transform: rotateY(180deg);
+}
+
+/* Flip animation */
+
+.card:hover .card-inner {
+  @include media(desktop) {
+    transform: rotateY(180deg);
+  }
 }
 
 .no-flip .card-inner {
