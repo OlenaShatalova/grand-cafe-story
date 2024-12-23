@@ -1,4 +1,3 @@
-// @import 'simplelightbox/dist/simple-lightbox.min.css';
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 
@@ -26,14 +25,7 @@
   }
 
   @include media(desktop) {
-    // padding-left: 56px;
     max-width: 440px;
-  }
-}
-
-@include media(desktop) {
-  .gallery-link {
-    pointer-events: none;
   }
 }
 
@@ -73,6 +65,21 @@
   right: 0;
 }
 
+.gallery-button-grey.gallery-button-prev {
+  left: -5px;
+}
+
+.gallery-button-grey.gallery-button-next {
+  right: -5px;
+}
+
+.gallery-button-grey svg,
+.gallery-button-grey svg {
+  fill: #adadad;
+  stroke-width: 1px;
+  stroke: #c1c1c1;
+}
+
 .gallery-button-next svg {
   transform: rotate(180deg);
 }
@@ -91,11 +98,27 @@
   right: 50%;
   transform: translateX(50%);
 }
+
 .sl-wrapper:focus-visible {
   outline: none;
 }
+
 .sl.wrapper > .sl-image {
   display: block;
   width: 270px !important;
   height: 281px;
+}
+
+.gallery-opened-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 280px;
+  height: 281px;
+}
+
+.opened-active {
+  display: block;
 }

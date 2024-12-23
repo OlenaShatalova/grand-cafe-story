@@ -10,7 +10,7 @@ const gallerySwiper = new Swiper('.swiper', {
   },
 
   direction: 'horizontal',
-  loop:true,
+  loop: true,
   autoHeight: false,
   autoWidth: false,
   watchOverflow: true,
@@ -33,42 +33,26 @@ const gallerySwiper = new Swiper('.swiper', {
   },
 });
 
-gallerySwiper.update();
+if (window.innerWidth <= 1200) {
+  const galleryImages = document.querySelectorAll('.js-gallery-picture');
+  const gallareOpenedImage = document.querySelectorAll('.gallery-opened-image');
+  const galleryBtn = document.querySelectorAll('.js-gallery-btn button');
 
-// const lightbox = new SimpleLightbox('.gallery-link', {
-//   fadeSpeed: 300, // Швидкість анімації закриття
-//   overlay: false,
-//   close: false,
-//   scaleImageToRatio: false,
-// });
+  const openImage = () => {
+    gallareOpenedImage.forEach(image => image.classList.add('opened-active'));
+    galleryBtn.forEach(btn => btn.classList.add('gallery-button-grey'));
+  };
 
+  const closeImage = () => {
+    gallareOpenedImage.forEach(image =>
+      image.classList.remove('opened-active')
+    );
+    galleryBtn.forEach(btn => btn.classList.remove('gallery-button-grey'));
+  };
 
+  galleryImages.forEach(image => image.addEventListener('click', openImage));
 
-// lightbox.on('shown.simplelightbox', function () {
-//   const lightboxElement = document.querySelector('.simple-lightbox');
-
-//   const swiperContainer = document.querySelector('.swiper.gallery-swiper');
-//   const rect = swiperContainer.getBoundingClientRect();
-
-//   console.log(rect.top);
-//   console.log(lightboxElement);
-
-//   // Встановлюємо координати вручну
-//   // lightboxElement.style.position = 'absolute';
-//   lightboxElement.style.top = `${rect.top + window.scrollY}px`;
-//   // lightboxElement.style.top = '399px';
-//   lightboxElement.style.zIndex = '1000';
-//   // lightboxElement.style.left = '244px';
-// });
-
-// Закриваємо Lightbox по click на ньому
-// lightbox.on('shown.simplelightbox', function () {
-//   const lightboxElement = document.querySelector('.simple-lightbox');
-
-//   lightboxElement.addEventListener('click', function (event) {
-//     if (event.target.tagName.toLowerCase() === 'img') {
-//       lightbox.close();
-//     }
-//   });
-// });
-
+  gallareOpenedImage.forEach(image =>
+    image.addEventListener('click', closeImage)
+  );
+}
