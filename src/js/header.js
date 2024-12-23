@@ -7,7 +7,7 @@ const sections = document.querySelectorAll('section');
 const mobileMenu = document.querySelector('.js-mob-menu');
 const burgerBtn = document.querySelector('.js-burger-menu');
 const closeBtn = document.querySelector('.js-close-btn');
-const mobileLinks = mobileMenu.querySelectorAll('a');
+const mobileLinks = mobileMenu.querySelectorAll('.mob-nav-list a');
 
 //   <!-- Open / Close mobile menu  -->
 function openMenu() {
@@ -97,5 +97,4 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach(section => observer.observe(section));
-
 
