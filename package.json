@@ -20,10 +20,9 @@
     "vite": "^4.5.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
-  "author": "Andrii Kyrylenko <z9877969@gmail.com>",
+  "author": "Olena Shatalova <08082023m@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "simplelightbox": "^2.14.3",
     "swiper": "^11.1.15",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
