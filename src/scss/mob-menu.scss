@@ -2,20 +2,18 @@
   position: fixed;
   top: -100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 320px;
-  height: 100vh;
   background-color: #a7c3ff;
-  padding: 22px 20px 15px;
+  padding: 22px 20px 15px 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+
 }
 
 .mob-menu.is-open {
-  top: 50%;
+  top: 0;
 }
 
 .no-scroll {
